@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import ohdsLogo from '../assets/onehealth-dataspace-symbol.png';
+import ohdsLogo from '../assets/onehealth-dataspace-imagotipo.png';
 import cesgaLogo from '../assets/cesga-logo.png';
 ---
 
@@ -13,15 +13,16 @@ import cesgaLogo from '../assets/cesga-logo.png';
 				<a href="https://dataspace.cesga.es/" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">
 					<Image src={ohdsLogo} alt="OneHealth DataSpace Logo" class="h-16 w-auto" />
 				</a>
-				<div class="text-4xl font-black leading-none">x</div>
-				<a href="https://cesga.es/" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">
-					<Image src={cesgaLogo} alt="CESGA Logo" class="h-16 w-auto" />
-				</a>
+				<div class="text-left">
+					<p class="font-bold text-xl uppercase text-accent">17 Junio 2026</p>
+					<p class="text-sm">SANTIAGO DE COMPOSTELA, ESPAÑA</p>
+				</div>
+				
 			</div>
-			<div class="text-right">
-				<p class="font-bold text-xl uppercase text-accent">17 Junio 2026</p>
-				<p class="text-sm">SANTIAGO DE COMPOSTELA, ESPAÑA</p>
-			</div>
+			<a href="https://cesga.es/" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">
+					<Image src={cesgaLogo} alt="CESGA Logo" class="h-12 w-auto" />
+			</a>
+			
 		</header>
 
 		<!-- Hero Section -->
