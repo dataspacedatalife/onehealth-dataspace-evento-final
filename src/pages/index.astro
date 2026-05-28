@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import ohdsLogo from '../assets/onehealth-dataspace-imagotipo.png';
 import cesgaLogo from '../assets/cesga-logo.png';
+import ueLogo from '../assets/financiado-ue.png';
+import ministerioLogo from '../assets/ministerio-transformacion.jpg';
+import prtrLogo from '../assets/prtr-logo.png';
+import xacobeoLogo from '../assets/xacobeo-logo.png';
 ---
 
 <Layout>
@@ -114,10 +118,40 @@ import cesgaLogo from '../assets/cesga-logo.png';
 		</section>
 
 		
+<footer class="border-t-4 border-black/70 py-12 text-xs">
 
-		<footer class="flex flex-wrap justify-between gap-2 text-xs opacity-50 uppercase py-12 border-t-4 border-black">
-			<p>OneHealth DataSpace x CESGA</p>
-			<p>2026 — <a href="https://www.cesga.es" class="underline hover:opacity-100 transition-opacity">CESGA</a></p>
-		</footer>
+	<div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-10">
+		<Image
+			src={ueLogo}
+			alt="Financiado por la Unión Europea Logo"
+			class="h-8 sm:h-10 md:h-12 w-auto"
+		/>
+
+		<Image
+			src={ministerioLogo}
+			alt="Ministerio para la transformación digital y de la función pública Logo"
+			class="h-8 sm:h-10 md:h-12 w-auto"
+		/>
+
+		<Image
+			src={prtrLogo}
+			alt="Plan de Recuperación, Transformación y Resiliencia Logo"
+			class="h-12 sm:h-14 md:h-16 w-auto"
+		/>
+
+		<Image
+			src={xacobeoLogo}
+			alt="Logo Xacobeo"
+			class="h-6 sm:h-8 md:h-10 w-auto"
+		/>
+	</div>
+
+	<div class="opacity-70 mt-10">
+		<p>
+			OneHealth DataSpace es una iniciativa del CESGA que forma parte de la inversión 1 del componente 12 del Plan de Recuperación, Transformación y Resiliencia (PRTR), financiado a través del Mecanismo de Recuperación y Resiliencia (MRR). Número de expediente: TSI-100120-2024-12 Período: 13-12-2024 – 30-06-2026 Financiada por la Unión Europea – Next Generation EU, Ministerio para la Transformación Digital y de la Función Pública en la Convocatoria de ayudas: “Espacios de Datos Sectoriales 2023 para la creación de demostradores y casos de uso de espacios de compartición de datos.” Importe total: 3.077.058 €
+		</p>
+	</div>
+
+</footer>
 	</main>
 </Layout>
